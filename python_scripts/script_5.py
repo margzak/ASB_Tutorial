@@ -10,11 +10,24 @@
 
 		$ python python_scripts/script_5.py
 '''
-# import datetime
+import datetime
 
+def drawSubtitle():
+	# get current year
+	msg = str(datetime.datetime.now().year)
+
+	# plot text
+	ax.text(
+		x=2.5,
+		y=-4,
+		s=msg,
+		fontsize=24,
+		color='black',
+		fontweight='bold')
+
+# Solution
 # def drawSubtitle():
-# 	# get current year
-# 	msg = str(datetime.datetime.now().year)
+# 	msg = 'Reviewer 2\n is the best'
 
 # 	# plot text
 # 	ax.text(
@@ -22,21 +35,8 @@
 # 		y=-4,
 # 		s=msg,
 # 		fontsize=24,
-# 		color='black',
+# 		color='green',
 # 		fontweight='bold')
-
-# Solution
-def drawSubtitle():
- 	msg = 'Reviewer 2\n is the best'
-
- 	# plot text
- 	ax.text(
-		x=2.5,
-		y=-4,
-		s=msg,
-		fontsize=24,
-		color='green',
-		fontweight='bold')
 
 # You will not need to edit the code below
 if __name__ == '__main__':
